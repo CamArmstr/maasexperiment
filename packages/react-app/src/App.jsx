@@ -35,7 +35,7 @@ import {
 } from "./components";
 import { NETWORKS, ALCHEMY_KEY, BACKEND_URL } from "./constants";
 import externalContracts from "./contracts/external_contracts";
-import multiSigWalletABI from "./contracts/multi_sig_wallet";
+import multiSigWalletABI from "./contracts/MultiSigWallet.json";
 // contracts
 import deployedContracts from "./contracts/hardhat_contracts.json";
 import { Transactor, Web3ModalSetup } from "./helpers";
