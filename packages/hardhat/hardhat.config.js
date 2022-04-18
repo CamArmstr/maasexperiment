@@ -12,6 +12,8 @@ require("hardhat-gas-reporter");
 require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-etherscan");
 require('hardhat-abi-exporter');
+require('hardhat-abi-exporter');
+
 
 const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 
@@ -294,6 +296,15 @@ module.exports = {
   etherscan: {
     apiKey: "DNXJA8RX2Q3VZ4URQIWP7Z68CJXQZSC6AW",
   },
+  abiExporter: {
+    path: './data/abi',
+    runOnCompile: true,
+    clear: true,
+    flat: true,
+    only: [':ERC20$'],
+    spacing: 2,
+    pretty: true,
+  }
 };
 
 const DEBUG = false;
